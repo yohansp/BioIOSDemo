@@ -1,0 +1,840 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1503331C2B84F260000D6747 /* RestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1503331B2B84F260000D6747 /* RestClient.swift */; };
+		1503331E2B84F3D9000D6747 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1503331D2B84F3D9000D6747 /* Cache.swift */; };
+		150333202B84F53E000D6747 /* DemoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1503331F2B84F53E000D6747 /* DemoRepository.swift */; };
+		150333232B84F55D000D6747 /* BioDemoDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150333222B84F55D000D6747 /* BioDemoDto.swift */; };
+		150333252B84F9C0000D6747 /* BioViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150333242B84F9C0000D6747 /* BioViewModel.swift */; };
+		150333282B84FCAD000D6747 /* String+md5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150333272B84FCAD000D6747 /* String+md5.swift */; };
+		1503332B2B858EB7000D6747 /* LoginInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1503332A2B858EB7000D6747 /* LoginInputCell.swift */; };
+		1503332D2B8590E2000D6747 /* BaseVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1503332C2B8590E2000D6747 /* BaseVc.swift */; };
+		1503332F2B859378000D6747 /* CommonComponentFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1503332E2B859378000D6747 /* CommonComponentFactory.swift */; };
+		15B1BF8E2B84A9EB00B876DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B1BF8D2B84A9EB00B876DA /* AppDelegate.swift */; };
+		15B1BF902B84A9EB00B876DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B1BF8F2B84A9EB00B876DA /* SceneDelegate.swift */; };
+		15B1BF972B84A9EC00B876DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15B1BF962B84A9EC00B876DA /* Assets.xcassets */; };
+		15B1BF9A2B84A9EC00B876DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15B1BF982B84A9EC00B876DA /* LaunchScreen.storyboard */; };
+		15B1BFA52B84A9EC00B876DA /* BioIOSDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B1BFA42B84A9EC00B876DA /* BioIOSDemoTests.swift */; };
+		15B1BFAF2B84A9EC00B876DA /* BioIOSDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B1BFAE2B84A9EC00B876DA /* BioIOSDemoUITests.swift */; };
+		15B1BFB12B84A9EC00B876DA /* BioIOSDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B1BFB02B84A9EC00B876DA /* BioIOSDemoUITestsLaunchTests.swift */; };
+		15B1BFBE2B84AA4D00B876DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B1BFBD2B84AA4D00B876DA /* ViewController.swift */; };
+		15B1BFE02B84B3BC00B876DA /* LoginVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B1BFDF2B84B3BC00B876DA /* LoginVc.swift */; };
+		5F5F470C24A9093BBFA95219 /* Pods_BioIOSDemo_BioIOSDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF68CCAE8DFB26110FE5C26 /* Pods_BioIOSDemo_BioIOSDemoUITests.framework */; };
+		9145D24D6DB90870392E4587 /* Pods_BioIOSDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E21B17820E9119DA1C85A91 /* Pods_BioIOSDemoTests.framework */; };
+		D080D94AB622475337BDB7E7 /* Pods_BioIOSDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D2802ED1DBF0A536A023C60 /* Pods_BioIOSDemo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		15B1BFA12B84A9EC00B876DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15B1BF822B84A9EB00B876DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15B1BF892B84A9EB00B876DA;
+			remoteInfo = BioIOSDemo;
+		};
+		15B1BFAB2B84A9EC00B876DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15B1BF822B84A9EB00B876DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15B1BF892B84A9EB00B876DA;
+			remoteInfo = BioIOSDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02D31A7AF6D8216B57235A7B /* Pods-BioIOSDemo-BioIOSDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BioIOSDemo-BioIOSDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-BioIOSDemo-BioIOSDemoUITests/Pods-BioIOSDemo-BioIOSDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1503331B2B84F260000D6747 /* RestClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestClient.swift; sourceTree = "<group>"; };
+		1503331D2B84F3D9000D6747 /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
+		1503331F2B84F53E000D6747 /* DemoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoRepository.swift; sourceTree = "<group>"; };
+		150333222B84F55D000D6747 /* BioDemoDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioDemoDto.swift; sourceTree = "<group>"; };
+		150333242B84F9C0000D6747 /* BioViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioViewModel.swift; sourceTree = "<group>"; };
+		150333272B84FCAD000D6747 /* String+md5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+md5.swift"; sourceTree = "<group>"; };
+		1503332A2B858EB7000D6747 /* LoginInputCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInputCell.swift; sourceTree = "<group>"; };
+		1503332C2B8590E2000D6747 /* BaseVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVc.swift; sourceTree = "<group>"; };
+		1503332E2B859378000D6747 /* CommonComponentFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonComponentFactory.swift; sourceTree = "<group>"; };
+		15B1BF8A2B84A9EB00B876DA /* BioIOSDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BioIOSDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		15B1BF8D2B84A9EB00B876DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		15B1BF8F2B84A9EB00B876DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		15B1BF962B84A9EC00B876DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		15B1BF992B84A9EC00B876DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		15B1BF9B2B84A9EC00B876DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15B1BFA02B84A9EC00B876DA /* BioIOSDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BioIOSDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		15B1BFA42B84A9EC00B876DA /* BioIOSDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioIOSDemoTests.swift; sourceTree = "<group>"; };
+		15B1BFAA2B84A9EC00B876DA /* BioIOSDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BioIOSDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		15B1BFAE2B84A9EC00B876DA /* BioIOSDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioIOSDemoUITests.swift; sourceTree = "<group>"; };
+		15B1BFB02B84A9EC00B876DA /* BioIOSDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioIOSDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		15B1BFBD2B84AA4D00B876DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		15B1BFDF2B84B3BC00B876DA /* LoginVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVc.swift; sourceTree = "<group>"; };
+		20961D22233037B9F84ACDC5 /* Pods-BioIOSDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BioIOSDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-BioIOSDemoTests/Pods-BioIOSDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3A655F68C1685FFACEEF0618 /* Pods-BioIOSDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BioIOSDemoTests.release.xcconfig"; path = "Target Support Files/Pods-BioIOSDemoTests/Pods-BioIOSDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		3D2802ED1DBF0A536A023C60 /* Pods_BioIOSDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BioIOSDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E21B17820E9119DA1C85A91 /* Pods_BioIOSDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BioIOSDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F5985D7CDA3E54E06B06965 /* Pods-BioIOSDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BioIOSDemo.release.xcconfig"; path = "Target Support Files/Pods-BioIOSDemo/Pods-BioIOSDemo.release.xcconfig"; sourceTree = "<group>"; };
+		A08277033BBA9743EC6E6E84 /* Pods-BioIOSDemo-BioIOSDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BioIOSDemo-BioIOSDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-BioIOSDemo-BioIOSDemoUITests/Pods-BioIOSDemo-BioIOSDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BBF68CCAE8DFB26110FE5C26 /* Pods_BioIOSDemo_BioIOSDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BioIOSDemo_BioIOSDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF4A237CE4CBBEF90E281B47 /* Pods-BioIOSDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BioIOSDemo.debug.xcconfig"; path = "Target Support Files/Pods-BioIOSDemo/Pods-BioIOSDemo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		15B1BF872B84A9EB00B876DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D080D94AB622475337BDB7E7 /* Pods_BioIOSDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15B1BF9D2B84A9EC00B876DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9145D24D6DB90870392E4587 /* Pods_BioIOSDemoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15B1BFA72B84A9EC00B876DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F5F470C24A9093BBFA95219 /* Pods_BioIOSDemo_BioIOSDemoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1503331A2B84F1FA000D6747 /* repository */ = {
+			isa = PBXGroup;
+			children = (
+				150333212B84F550000D6747 /* dto */,
+				1503331B2B84F260000D6747 /* RestClient.swift */,
+				1503331D2B84F3D9000D6747 /* Cache.swift */,
+				1503331F2B84F53E000D6747 /* DemoRepository.swift */,
+			);
+			path = repository;
+			sourceTree = "<group>";
+		};
+		150333212B84F550000D6747 /* dto */ = {
+			isa = PBXGroup;
+			children = (
+				150333222B84F55D000D6747 /* BioDemoDto.swift */,
+			);
+			path = dto;
+			sourceTree = "<group>";
+		};
+		150333262B84FC99000D6747 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				150333272B84FCAD000D6747 /* String+md5.swift */,
+				1503332E2B859378000D6747 /* CommonComponentFactory.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		150333292B858EA4000D6747 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				1503332A2B858EB7000D6747 /* LoginInputCell.swift */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		15B1BF812B84A9EB00B876DA = {
+			isa = PBXGroup;
+			children = (
+				15B1BF8C2B84A9EB00B876DA /* BioIOSDemo */,
+				15B1BFA32B84A9EC00B876DA /* BioIOSDemoTests */,
+				15B1BFAD2B84A9EC00B876DA /* BioIOSDemoUITests */,
+				15B1BF8B2B84A9EB00B876DA /* Products */,
+				CD932825497161E8C4ED1C7D /* Pods */,
+				D3A49885FC45B0C2AA200E42 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		15B1BF8B2B84A9EB00B876DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				15B1BF8A2B84A9EB00B876DA /* BioIOSDemo.app */,
+				15B1BFA02B84A9EC00B876DA /* BioIOSDemoTests.xctest */,
+				15B1BFAA2B84A9EC00B876DA /* BioIOSDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		15B1BF8C2B84A9EB00B876DA /* BioIOSDemo */ = {
+			isa = PBXGroup;
+			children = (
+				150333262B84FC99000D6747 /* utils */,
+				1503331A2B84F1FA000D6747 /* repository */,
+				15B1BFE12B84B49300B876DA /* apps */,
+				15B1BF8D2B84A9EB00B876DA /* AppDelegate.swift */,
+				15B1BF8F2B84A9EB00B876DA /* SceneDelegate.swift */,
+				15B1BF962B84A9EC00B876DA /* Assets.xcassets */,
+				15B1BF982B84A9EC00B876DA /* LaunchScreen.storyboard */,
+				15B1BF9B2B84A9EC00B876DA /* Info.plist */,
+			);
+			path = BioIOSDemo;
+			sourceTree = "<group>";
+		};
+		15B1BFA32B84A9EC00B876DA /* BioIOSDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				15B1BFA42B84A9EC00B876DA /* BioIOSDemoTests.swift */,
+			);
+			path = BioIOSDemoTests;
+			sourceTree = "<group>";
+		};
+		15B1BFAD2B84A9EC00B876DA /* BioIOSDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				15B1BFAE2B84A9EC00B876DA /* BioIOSDemoUITests.swift */,
+				15B1BFB02B84A9EC00B876DA /* BioIOSDemoUITestsLaunchTests.swift */,
+			);
+			path = BioIOSDemoUITests;
+			sourceTree = "<group>";
+		};
+		15B1BFE12B84B49300B876DA /* apps */ = {
+			isa = PBXGroup;
+			children = (
+				150333292B858EA4000D6747 /* cell */,
+				1503332C2B8590E2000D6747 /* BaseVc.swift */,
+				15B1BFDF2B84B3BC00B876DA /* LoginVc.swift */,
+				15B1BFBD2B84AA4D00B876DA /* ViewController.swift */,
+				150333242B84F9C0000D6747 /* BioViewModel.swift */,
+			);
+			path = apps;
+			sourceTree = "<group>";
+		};
+		CD932825497161E8C4ED1C7D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FF4A237CE4CBBEF90E281B47 /* Pods-BioIOSDemo.debug.xcconfig */,
+				4F5985D7CDA3E54E06B06965 /* Pods-BioIOSDemo.release.xcconfig */,
+				A08277033BBA9743EC6E6E84 /* Pods-BioIOSDemo-BioIOSDemoUITests.debug.xcconfig */,
+				02D31A7AF6D8216B57235A7B /* Pods-BioIOSDemo-BioIOSDemoUITests.release.xcconfig */,
+				20961D22233037B9F84ACDC5 /* Pods-BioIOSDemoTests.debug.xcconfig */,
+				3A655F68C1685FFACEEF0618 /* Pods-BioIOSDemoTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D3A49885FC45B0C2AA200E42 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D2802ED1DBF0A536A023C60 /* Pods_BioIOSDemo.framework */,
+				BBF68CCAE8DFB26110FE5C26 /* Pods_BioIOSDemo_BioIOSDemoUITests.framework */,
+				4E21B17820E9119DA1C85A91 /* Pods_BioIOSDemoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		15B1BF892B84A9EB00B876DA /* BioIOSDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15B1BFB42B84A9EC00B876DA /* Build configuration list for PBXNativeTarget "BioIOSDemo" */;
+			buildPhases = (
+				DA9C411C659A1E7C2727D3BC /* [CP] Check Pods Manifest.lock */,
+				15B1BF862B84A9EB00B876DA /* Sources */,
+				15B1BF872B84A9EB00B876DA /* Frameworks */,
+				15B1BF882B84A9EB00B876DA /* Resources */,
+				EA1D4FDB1F97DFE38ED3BBE8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BioIOSDemo;
+			productName = BioIOSDemo;
+			productReference = 15B1BF8A2B84A9EB00B876DA /* BioIOSDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		15B1BF9F2B84A9EC00B876DA /* BioIOSDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15B1BFB72B84A9EC00B876DA /* Build configuration list for PBXNativeTarget "BioIOSDemoTests" */;
+			buildPhases = (
+				32099AB2891354FCAC4ADB9B /* [CP] Check Pods Manifest.lock */,
+				15B1BF9C2B84A9EC00B876DA /* Sources */,
+				15B1BF9D2B84A9EC00B876DA /* Frameworks */,
+				15B1BF9E2B84A9EC00B876DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				15B1BFA22B84A9EC00B876DA /* PBXTargetDependency */,
+			);
+			name = BioIOSDemoTests;
+			productName = BioIOSDemoTests;
+			productReference = 15B1BFA02B84A9EC00B876DA /* BioIOSDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		15B1BFA92B84A9EC00B876DA /* BioIOSDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15B1BFBA2B84A9EC00B876DA /* Build configuration list for PBXNativeTarget "BioIOSDemoUITests" */;
+			buildPhases = (
+				8570FF1F14F717CDCA820301 /* [CP] Check Pods Manifest.lock */,
+				15B1BFA62B84A9EC00B876DA /* Sources */,
+				15B1BFA72B84A9EC00B876DA /* Frameworks */,
+				15B1BFA82B84A9EC00B876DA /* Resources */,
+				519112FAA9564D4D4976E518 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				15B1BFAC2B84A9EC00B876DA /* PBXTargetDependency */,
+			);
+			name = BioIOSDemoUITests;
+			productName = BioIOSDemoUITests;
+			productReference = 15B1BFAA2B84A9EC00B876DA /* BioIOSDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		15B1BF822B84A9EB00B876DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					15B1BF892B84A9EB00B876DA = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					15B1BF9F2B84A9EC00B876DA = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 15B1BF892B84A9EB00B876DA;
+					};
+					15B1BFA92B84A9EC00B876DA = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 15B1BF892B84A9EB00B876DA;
+					};
+				};
+			};
+			buildConfigurationList = 15B1BF852B84A9EB00B876DA /* Build configuration list for PBXProject "BioIOSDemo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 15B1BF812B84A9EB00B876DA;
+			productRefGroup = 15B1BF8B2B84A9EB00B876DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				15B1BF892B84A9EB00B876DA /* BioIOSDemo */,
+				15B1BF9F2B84A9EC00B876DA /* BioIOSDemoTests */,
+				15B1BFA92B84A9EC00B876DA /* BioIOSDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		15B1BF882B84A9EB00B876DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15B1BF9A2B84A9EC00B876DA /* LaunchScreen.storyboard in Resources */,
+				15B1BF972B84A9EC00B876DA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15B1BF9E2B84A9EC00B876DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15B1BFA82B84A9EC00B876DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		32099AB2891354FCAC4ADB9B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BioIOSDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		519112FAA9564D4D4976E518 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BioIOSDemo-BioIOSDemoUITests/Pods-BioIOSDemo-BioIOSDemoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BioIOSDemo-BioIOSDemoUITests/Pods-BioIOSDemo-BioIOSDemoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BioIOSDemo-BioIOSDemoUITests/Pods-BioIOSDemo-BioIOSDemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8570FF1F14F717CDCA820301 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BioIOSDemo-BioIOSDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA9C411C659A1E7C2727D3BC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BioIOSDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA1D4FDB1F97DFE38ED3BBE8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BioIOSDemo/Pods-BioIOSDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BioIOSDemo/Pods-BioIOSDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BioIOSDemo/Pods-BioIOSDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		15B1BF862B84A9EB00B876DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15B1BF8E2B84A9EB00B876DA /* AppDelegate.swift in Sources */,
+				150333232B84F55D000D6747 /* BioDemoDto.swift in Sources */,
+				150333202B84F53E000D6747 /* DemoRepository.swift in Sources */,
+				150333282B84FCAD000D6747 /* String+md5.swift in Sources */,
+				15B1BF902B84A9EB00B876DA /* SceneDelegate.swift in Sources */,
+				150333252B84F9C0000D6747 /* BioViewModel.swift in Sources */,
+				15B1BFE02B84B3BC00B876DA /* LoginVc.swift in Sources */,
+				1503332D2B8590E2000D6747 /* BaseVc.swift in Sources */,
+				1503331C2B84F260000D6747 /* RestClient.swift in Sources */,
+				1503331E2B84F3D9000D6747 /* Cache.swift in Sources */,
+				1503332F2B859378000D6747 /* CommonComponentFactory.swift in Sources */,
+				15B1BFBE2B84AA4D00B876DA /* ViewController.swift in Sources */,
+				1503332B2B858EB7000D6747 /* LoginInputCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15B1BF9C2B84A9EC00B876DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15B1BFA52B84A9EC00B876DA /* BioIOSDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15B1BFA62B84A9EC00B876DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15B1BFB12B84A9EC00B876DA /* BioIOSDemoUITestsLaunchTests.swift in Sources */,
+				15B1BFAF2B84A9EC00B876DA /* BioIOSDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		15B1BFA22B84A9EC00B876DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 15B1BF892B84A9EB00B876DA /* BioIOSDemo */;
+			targetProxy = 15B1BFA12B84A9EC00B876DA /* PBXContainerItemProxy */;
+		};
+		15B1BFAC2B84A9EC00B876DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 15B1BF892B84A9EB00B876DA /* BioIOSDemo */;
+			targetProxy = 15B1BFAB2B84A9EC00B876DA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		15B1BF982B84A9EC00B876DA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				15B1BF992B84A9EC00B876DA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		15B1BFB22B84A9EC00B876DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		15B1BFB32B84A9EC00B876DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		15B1BFB52B84A9EC00B876DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF4A237CE4CBBEF90E281B47 /* Pods-BioIOSDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_ASSET_SYMBOL_FRAMEWORKS = "";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BioIOSDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.rhy.ios.BioIOSDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		15B1BFB62B84A9EC00B876DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F5985D7CDA3E54E06B06965 /* Pods-BioIOSDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_ASSET_SYMBOL_FRAMEWORKS = "";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BioIOSDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.rhy.ios.BioIOSDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		15B1BFB82B84A9EC00B876DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20961D22233037B9F84ACDC5 /* Pods-BioIOSDemoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.rhy.ios.BioIOSDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BioIOSDemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BioIOSDemo";
+			};
+			name = Debug;
+		};
+		15B1BFB92B84A9EC00B876DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A655F68C1685FFACEEF0618 /* Pods-BioIOSDemoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.rhy.ios.BioIOSDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BioIOSDemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BioIOSDemo";
+			};
+			name = Release;
+		};
+		15B1BFBB2B84A9EC00B876DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A08277033BBA9743EC6E6E84 /* Pods-BioIOSDemo-BioIOSDemoUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.rhy.ios.BioIOSDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BioIOSDemo;
+			};
+			name = Debug;
+		};
+		15B1BFBC2B84A9EC00B876DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02D31A7AF6D8216B57235A7B /* Pods-BioIOSDemo-BioIOSDemoUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.rhy.ios.BioIOSDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BioIOSDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		15B1BF852B84A9EB00B876DA /* Build configuration list for PBXProject "BioIOSDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15B1BFB22B84A9EC00B876DA /* Debug */,
+				15B1BFB32B84A9EC00B876DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15B1BFB42B84A9EC00B876DA /* Build configuration list for PBXNativeTarget "BioIOSDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15B1BFB52B84A9EC00B876DA /* Debug */,
+				15B1BFB62B84A9EC00B876DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15B1BFB72B84A9EC00B876DA /* Build configuration list for PBXNativeTarget "BioIOSDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15B1BFB82B84A9EC00B876DA /* Debug */,
+				15B1BFB92B84A9EC00B876DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15B1BFBA2B84A9EC00B876DA /* Build configuration list for PBXNativeTarget "BioIOSDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15B1BFBB2B84A9EC00B876DA /* Debug */,
+				15B1BFBC2B84A9EC00B876DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 15B1BF822B84A9EB00B876DA /* Project object */;
+}

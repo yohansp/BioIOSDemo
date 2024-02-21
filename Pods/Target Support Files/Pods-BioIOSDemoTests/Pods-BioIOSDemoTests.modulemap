@@ -1,0 +1,6 @@
+framework module Pods_BioIOSDemoTests {
+  umbrella header "Pods-BioIOSDemoTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
